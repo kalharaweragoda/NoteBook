@@ -25,9 +25,9 @@ export default function SignUpScreen() {
   return (
     
       <ScrollView style={styles.container} contentContainerStyle={styles.scrollcontent}>
-        <View>
-          <Text>Create Account</Text>
-          <Text>Fill in the information below to create your account.</Text>
+        <View style={styles.header}>
+          <Text style={styles.pageTitle}>Create Account</Text>
+          <Text style={styles.subTitles}>Fill in the information below to create your account.</Text>
         </View>
         <View>
             <View>
@@ -54,5 +54,16 @@ export default function SignUpScreen() {
   },
   scrollcontent: {
     flexGrow: 1,
+  },
+  header: {
+    marginBottom: 20,
+  },
+  pageTitle: {
+    fontSize: 24,
+    fontWeight: 'bold',
+  },
+  subTitles: {
+    fontSize: 14,
+    color: '#666',
   },
 }); 
