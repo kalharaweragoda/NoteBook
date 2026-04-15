@@ -37,10 +37,9 @@ export default function SignUpScreen() {
                 ) : (
                   <View>
                     <Text>+</Text>
-
+                    <Text>Add Image</Text>
                   </View>
-                )}
-                
+                )}                
             </Pressable>
         </View>
       </ScrollView>
