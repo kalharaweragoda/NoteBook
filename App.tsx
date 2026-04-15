@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button,  View, StyleSheet, Text, ScrollView, Pressable, Alert } from "react-native";
+import { Button,  View, StyleSheet, Text, ScrollView, Pressable, Alert, Image } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import * as ImagePicker from 'expo-image-picker';
 
@@ -31,7 +31,17 @@ export default function SignUpScreen() {
         </View>
 
         <View>
+            <Pressable onPress={pickImage}>
+                {image? (
+                  <Image source={{uri: image}} />
+                ) : (
+                  <View>
+                    <Text>+</Text>
 
+                  </View>
+                )}
+                
+            </Pressable>
         </View>
       </ScrollView>
       
