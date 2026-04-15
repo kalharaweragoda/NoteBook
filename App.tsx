@@ -24,14 +24,14 @@ export default function SignUpScreen() {
     };
   return (
     
-      <ScrollView>
+      <ScrollView style={styles.container} contentContainerStyle={styles.scrollcontent}>
         <View>
           <Text>Create Account</Text>
           <Text>Fill in the information below to create your account.</Text>
         </View>
-
         <View>
-            <Pressable onPress={pickImage}>
+            <View>
+              <Pressable onPress={pickImage}>
                 {image? (
                   <Image source={{uri: image}} />
                 ) : (
@@ -40,7 +40,8 @@ export default function SignUpScreen() {
                     <Text>Add Image</Text>
                   </View>
                 )}                
-            </Pressable>
+              </Pressable>
+            </View>
         </View>
       </ScrollView>
       
@@ -48,5 +49,10 @@ export default function SignUpScreen() {
 }
 
  const styles = StyleSheet.create({
-  
+  container: {
+    flex: 1,
+  },
+  scrollcontent: {
+    flexGrow: 1,
+  },
 }); 
