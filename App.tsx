@@ -56,7 +56,7 @@ export default function SignUpScreen() {
   },
   scrollcontent: {
     flexGrow: 1,
-    padding: 20,
+    padding: 40,
   },
   header: {
     marginBottom: 20,
@@ -79,7 +79,7 @@ export default function SignUpScreen() {
   },
   imageContainer: {
     alignItems: 'center',
-    marginBottom: 20,
+    marginBottom: 30,
   },
   imageUploader: {
     width: 120,
@@ -87,6 +87,9 @@ export default function SignUpScreen() {
     borderRadius: 60,
     backgroundColor: '#e0e0e0',
     justifyContent: 'center',
+    borderWidth: 2,
+    borderColor: '#dddddd',
+    borderStyle: 'dashed',
     alignItems: 'center',
   },
   profileImage: {
