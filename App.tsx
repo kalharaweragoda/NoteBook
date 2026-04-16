@@ -49,6 +49,11 @@ export default function SignUpScreen() {
               <TextInput placeholder="Insert your full name" style={styles.input}/>
             </View>
 
+            <View style={styles.inputContainer}>
+              <Text style={styles.label}>UserName</Text>
+              <TextInput placeholder="Insert your username" style={styles.input}/>
+            </View>
+
         </View>
       </ScrollView>
       
@@ -118,7 +123,7 @@ export default function SignUpScreen() {
     justifyContent: 'center',
   },
   inputContainer: {
-    marginBottom: 15,
+    marginBottom: 20,
   },
   label: {
     fontSize: 14,
