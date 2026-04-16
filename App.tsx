@@ -51,12 +51,15 @@ export default function SignUpScreen() {
  const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#f8f9fa',
   },
   scrollcontent: {
     flexGrow: 1,
+    padding: 20,
   },
   header: {
     marginBottom: 20,
+    alignItems: "center",
   },
   pageTitle: {
     fontSize: 24,
