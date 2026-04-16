@@ -48,7 +48,7 @@ export default function SignUpScreen() {
               <Text style={styles.label}>Full Name</Text>
               <TextInput placeholder="Insert your full name" style={styles.input}/>
             </View>
-            
+
         </View>
       </ScrollView>
       
@@ -116,5 +116,23 @@ export default function SignUpScreen() {
   imagePlaceholder: {
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  inputContainer: {
+    marginBottom: 15,
+  },
+  label: {
+    fontSize: 14,
+    fontWeight: '600',
+    color: '#333',
+    marginBottom: 8,
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: '#dddddd',
+    borderRadius: 8,
+    paddingHorizontal: 12,
+    paddingVertical: 10,
+    fontSize: 14,
+    color: '#333',
   },
 }); 
