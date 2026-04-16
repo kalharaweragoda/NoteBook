@@ -59,6 +59,11 @@ export default function SignUpScreen() {
               <TextInput placeholder="Insert your email" style={styles.input} keyboardType="email-address"/>
             </View>
 
+            <View style={styles.inputContainer}>
+              <Text style={styles.label}>Password</Text>
+              <TextInput placeholder="Insert your password" style={styles.input} secureTextEntry/>
+            </View>
+
         </View>
       </ScrollView>
       
