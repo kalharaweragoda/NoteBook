@@ -64,9 +64,13 @@ export default function SignUpScreen() {
   pageTitle: {
     fontSize: 24,
     fontWeight: 'bold',
+    color: '#333333',
+    marginBottom: 10, 
   },
   subTitles: {
     fontSize: 14,
     color: '#666',
+    textAlign: 'center',
+    lineHeight: 22,
   },
 }); 
