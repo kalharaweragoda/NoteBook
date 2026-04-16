@@ -44,10 +44,11 @@ export default function SignUpScreen() {
               </Pressable>
             </View>
 
-            <View>
-              <Text>Full Name</Text>
-              <TextInput placeholder="Insert your full name"/>
+            <View style={styles.inputContainer}>
+              <Text style={styles.label}>Full Name</Text>
+              <TextInput placeholder="Insert your full name" style={styles.input}/>
             </View>
+            
         </View>
       </ScrollView>
       
