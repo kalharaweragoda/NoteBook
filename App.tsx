@@ -61,7 +61,12 @@ export default function SignUpScreen() {
 
             <View style={styles.inputContainer}>
               <Text style={styles.label}>Password</Text>
-              <TextInput placeholder="Insert your password" style={styles.input} secureTextEntry/>
+              <TextInput placeholder="Create New Password" style={styles.input} secureTextEntry/>
+            </View>
+
+            <View style={styles.inputContainer}>
+              <Text style={styles.label}>ConfirmPassword</Text>
+              <TextInput placeholder="Confirm your password" style={styles.input} secureTextEntry/>
             </View>
 
         </View>
