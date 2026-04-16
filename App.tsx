@@ -69,6 +69,11 @@ export default function SignUpScreen() {
               <TextInput placeholder="Confirm your password" style={styles.input} secureTextEntry/>
             </View>
 
+            <View style={styles.inputContainer}>
+              <Text style={styles.label}>City</Text>
+              <TextInput placeholder="Select your city" style={styles.input} />
+            </View>
+
         </View>
       </ScrollView>
       
