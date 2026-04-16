@@ -56,7 +56,7 @@ export default function SignUpScreen() {
 
             <View style={styles.inputContainer}>
               <Text style={styles.label}>Email</Text>
-              <TextInput placeholder="Insert your email" style={styles.input}/>
+              <TextInput placeholder="Insert your email" style={styles.input} keyboardType="email-address"/>
             </View>
 
         </View>
