@@ -29,15 +29,16 @@ export default function SignUpScreen() {
           <Text style={styles.pageTitle}>Create Account</Text>
           <Text style={styles.subTitles}>Fill in the information below to create your account.</Text>
         </View>
-        <View>
-            <View>
-              <Pressable onPress={pickImage}>
+
+        <View style={styles.form}>
+            <View style={styles.imageContainer}>
+              <Pressable onPress={pickImage} style={styles.imageUploader}>
                 {image? (
-                  <Image source={{uri: image}} />
+                  <Image source={{uri: image}} style={styles.profileImage} />
                 ) : (
-                  <View>
-                    <Text>+</Text>
-                    <Text>Add Image</Text>
+                  <View style={styles.imagePlaceholder}>
+                    <Text style={styles.imageText}>+</Text>
+                    <Text style={styles.imageLable}>Add Image</Text>
                   </View>
                 )}                
               </Pressable>
@@ -72,5 +73,39 @@ export default function SignUpScreen() {
     color: '#666',
     textAlign: 'center',
     lineHeight: 22,
+  },
+  form: {
+    marginBottom: 20,
+  },
+  imageContainer: {
+    alignItems: 'center',
+    marginBottom: 20,
+  },
+  imageUploader: {
+    width: 120,
+    height: 120,
+    borderRadius: 60,
+    backgroundColor: '#e0e0e0',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  profileImage: {
+    width: 120,
+    height: 120,
+    borderRadius: 60,
+  },
+  imageText: {
+    fontSize: 32,
+    fontWeight: 'bold',
+    color: '#666',
+  },
+  imageLable: {
+    fontSize: 12,
+    color: '#666',
+    marginTop: 5,
+  },
+  imagePlaceholder: {
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 }); 
