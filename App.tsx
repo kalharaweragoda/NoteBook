@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button,  View, StyleSheet, Text, ScrollView, Pressable, Alert, Image, TextInput } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import * as ImagePicker from 'expo-image-picker';
+import { Picker } from "@react-native-picker/picker";
 
 export default function SignUpScreen() {
     const [image, setImage] = useState<string | null>(null);
@@ -75,7 +76,13 @@ export default function SignUpScreen() {
             <View style={styles.inputContainer}>
               <Text style={styles.label}>City</Text>
               <View style={styles.pickerContainer}>
+                <Picker 
+                selectedValue={selectedCity}
+                style={styles.picker}
+                onValueChange={(itemValue)=>setSelectedCity(itemValue)}>
+                  <Picker.Item label="Select your city" value={''} />
 
+                </Picker>
               </View>
             </View>
 
