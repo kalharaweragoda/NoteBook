@@ -199,6 +199,7 @@ export default function SignUpScreen() {
   },
   buttonContainer: {
     flexDirection: 'row',
+    justifyContent: 'space-between',
     gap: 10,
     marginTop: 20,
   },
@@ -208,11 +209,13 @@ export default function SignUpScreen() {
     paddingHorizontal: 20,
     backgroundColor: '#f0f0f0',
     borderRadius: 8,
+    borderWidth: 2,
+    borderColor: '#999999',
     alignItems: 'center',
   },
   backButtonText: {
     fontSize: 14,
-    fontWeight: '600',
+    fontWeight: 'bold',
     color: '#333',
   },
   saveButton: {
@@ -225,7 +228,7 @@ export default function SignUpScreen() {
   },
   saveButtonText: {
     fontSize: 14,
-    fontWeight: '600',
+    fontWeight: 'bold',
     color: '#fff',
   },
 }); 
