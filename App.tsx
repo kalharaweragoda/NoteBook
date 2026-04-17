@@ -81,7 +81,9 @@ export default function SignUpScreen() {
                 style={styles.picker}
                 onValueChange={(itemValue)=>setSelectedCity(itemValue)}>
                   <Picker.Item label="Select your city" value={''} />
-
+                  {cities.map((city,index)=>(
+                    <Picker.Item key={index} label={city} value={city} />
+                  ))}
                 </Picker>
               </View>
             </View>
@@ -171,5 +173,16 @@ export default function SignUpScreen() {
     paddingVertical: 10,
     fontSize: 14,
     color: '#333',
+  },
+  pickerContainer: {
+    borderWidth: 1,
+    borderColor: '#dddddd',
+    borderRadius: 8,
+    overflow: 'hidden',
+    backgroundColor: '#fff',
+  },
+  picker: {
+    height: 50,
+    width: '100%',
   },
 }); 
