@@ -88,6 +88,12 @@ export default function SignUpScreen() {
               </View>
             </View>
 
+            <View style={styles.buttonContainer}>
+              <Pressable>
+                <Text>Go Back</Text>
+              </Pressable>
+            </View>
+
         </View>
       </ScrollView>
       
@@ -184,5 +190,6 @@ export default function SignUpScreen() {
   picker: {
     height: 50,
     width: '100%',
+    padding: 10,
   },
 }); 
