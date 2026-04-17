@@ -5,6 +5,9 @@ import * as ImagePicker from 'expo-image-picker';
 
 export default function SignUpScreen() {
     const [image, setImage] = useState<string | null>(null);
+    const [selectedCity,setSelectedCity] = useState('');
+
+    const cities = ['Colombo', 'Kandy', 'Galle', 'Jaffna', 'Anuradhapura'];
 
     const pickImage = async () => {
     var result = await ImagePicker.launchImageLibraryAsync({
@@ -71,7 +74,9 @@ export default function SignUpScreen() {
 
             <View style={styles.inputContainer}>
               <Text style={styles.label}>City</Text>
-              <TextInput placeholder="Select your city" style={styles.input} />
+              <View style={styles.pickerContainer}>
+
+              </View>
             </View>
 
         </View>
