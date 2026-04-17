@@ -89,11 +89,16 @@ export default function SignUpScreen() {
             </View>
 
             <View style={styles.buttonContainer}>
-              <Pressable>
-                <Text>Go Back</Text>
-              </Pressable>
-            </View>
 
+              <Pressable style={styles.backButton}>
+                <Text style={styles.backButtonText}>Go Back</Text>
+              </Pressable>
+
+              <Pressable style={styles.saveButton}>
+                <Text style={styles.saveButtonText}>Create Account</Text>
+              </Pressable>
+
+            </View>
         </View>
       </ScrollView>
       
